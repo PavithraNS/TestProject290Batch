@@ -11,6 +11,11 @@ namespace TestProject290Batch
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to TestProject");
+            ArrayConcepts arrayConcepts = new ArrayConcepts();
+            Console.WriteLine("Please enter how many elements you want to store it in array");
+            int size = Convert.ToInt32(Console.ReadLine());
+            arrayConcepts.ArrayCreation(size);
+            arrayConcepts.DisplayArrayElements();
             Console.ReadLine();
         }
     }
